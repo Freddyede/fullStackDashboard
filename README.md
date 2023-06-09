@@ -1,5 +1,14 @@
 # fullStackDashboard :
 
+### Utils:
+
+- Trello : [Project](https://trello.com/invite/b/zMmAae4i/ATTIa33692ca6392594a0d411fe02f8ce683BB583E87/dashboard-fullstack)
+
+### Frameworks :
+
+- Back : Symfony 6.3
+- Front : Angular 16.0.5
+
 ### Résumé :
 
 Ce projet comportera :
@@ -12,10 +21,5 @@ Ce projet comportera :
 - AnnouncePage : Gestionnaires de toutes les annonces. ({roles: USER})
 - AdminUsersPage : Gestionnaires de tous les utilisateurs de ce site web hormis l'administrateur ({roles: ADMIN})
 
-### Utils:
-- Trello : [Project](https://trello.com/invite/b/zMmAae4i/ATTIa33692ca6392594a0d411fe02f8ce683BB583E87/dashboard-fullstack)
 
 
-### Frameworks :
-- Back : Symfony 6.3
-- Front : Angular 16.0.5
