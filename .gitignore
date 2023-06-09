@@ -6,3 +6,5 @@ back/composer.lock
 back/symfony.lock
 
 .idea/
+
+back/vendor/
