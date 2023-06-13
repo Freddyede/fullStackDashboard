@@ -1,0 +1,63 @@
+.card-container {
+    display: @cardContainerDisplays;
+    flex-wrap: @cardContainerWrapper;
+    justify-content: @cardsCenterCards;
+    margin-top: @cardsContainerMarginTop;
+    & .card:not(:last-child) {
+        margin-right: @cardContainerCardNotLastMarginRight;
+    }
+    & .card:not(.highlight-card) {
+        cursor: @cardContainerNotHighlightCardCursor;
+    }
+    & .card:not(.highlight-card):hover {
+        transform: @cardContainerNotHighlightCardHoverTransform;
+        box-shadow: @cardContainerNotHighlightCardHoverBoxShadow;
+        & .material-icons {
+            & path {
+                fill: @cardsContainerPathFill;
+            }
+        }
+    }
+}
+
+.card {
+    all: @cardsAll;
+    border-radius: @cardsBorderRadius;
+    border: @cardsBorder;
+    background-color: @cardsBackgroundColor;
+    height: @cardsHeight;
+    width: @cardsWidth;
+    margin: @cardsMargin;
+    padding: @cardsPadding;
+    display: @cardsDisplays;
+    flex-direction: @cardsDirection;
+    justify-content: @cardsCenterCards;
+    align-items: @cardsCenterCards;
+    transition: @cardsTransition;
+    line-height: @cardsLineHeight;
+    &.highlight-card {
+        background-color: @highlightCardsBackgroundColor;
+        color: @highlightCardsColor;
+        font-weight: @highlightCardsFontWeight;
+        border: @highlightCardsBorder;
+        width: @highlightCardsWidth;
+        min-width: @highlightCardsMinWidth;
+        position: @highlightCardsPosition;
+    }
+    &.card {
+        &.highlight-card {
+            & span {
+                margin-left: 60px;
+            }
+        }
+        &.card-small {
+            height: @cardSmallHeight;
+            width: 168px;
+        }
+    }
+    & svg.material-icons {
+        & path {
+            fill: #888;
+        }
+    }
+}
